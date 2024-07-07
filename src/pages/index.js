@@ -5,11 +5,11 @@ import ProductListing from "@/components/ProductListing";
 
 export default function Home() {
   return (
-    <div className="h-auto w-screen py-2 px-28">
+    <div className="h-auto w-screen py-2 px-4 md:px-28">
       <Header />
       <Hero />
-      <ProductListing>
-        <div className="p-x-7">
+      <ProductListing itemNum={18}>
+        <div>
           <h2 className="text-purple font-bold text-3xl">Products</h2>
           <div className=" flex flex-row gap-2  mt-3">
             <select className=" rounded-md cursor-pointer text-black/60 border-2 p-2 border-gray/50 text-sm">

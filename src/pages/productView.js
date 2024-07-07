@@ -22,7 +22,7 @@ function productView() {
         </div>
       </Header>
       <ProductViewHero />
-      <ProductListing>
+      <ProductListing itemNum={10}>
         <div className="p-x-7">
           <h2 className="text-purple font-bold text-3xl">You May Also Like</h2>
         </div>

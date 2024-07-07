@@ -1,14 +1,14 @@
 import data from "@/utils/data";
 import Item from "./Item";
 
-function ProductListing({ children }) {
+function ProductListing({ children, itemNum }) {
   return (
-    <div className="mt-10  p-7">
+    <div className="mt-10  md:p-7">
       {children}
-      <div className=" w-full h-auto flex p-4 justify-between items-center flex-row flex-wrap gap-8">
-        {data.map((item, index) => (
-          <Item item={item} key={index} />
-        ))}
+      <div className=" w-full h-auto flex md:p-4 p-3  justify-between items-center  flex-wrap gap-1 md:gap-8">
+        {data.map((item, index) =>
+          itemNum > index ? <Item item={item} key={index} /> : null
+        )}
       </div>
     </div>
   );

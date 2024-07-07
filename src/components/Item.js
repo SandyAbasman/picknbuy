@@ -3,9 +3,9 @@ import { MdOutlineStarBorder } from "react-icons/md";
 
 function Item({ item }) {
   return (
-    <a href="/productView" className="mt-2 ">
-      <img className="mb-2" src={item.productImg} alt={item.productName} />
-      <div className="pl-2">
+    <a href="/productView" className=" w-36 mb-4 block md:w-auto ">
+      <img className="mb-2 " src={item.productImg} alt={item.productName} />
+      <div className="md:pl-2">
         <h3 className="text-sm text-text-color/60 font-bold">
           {item.productName}
           <span className="text-purple font-bold capitalize">
