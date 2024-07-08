@@ -10,8 +10,8 @@ import { AiOutlineLink } from "react-icons/ai";
 
 function ProductViewHero() {
   return (
-    <div className="  h-auto flex flex-row justify-between mt-6 items-start ">
-      <div className=" w-[60%] h-auto flex flex-col justify-start items-center  gap-6">
+    <div className="  h-auto flex md:flex-row flex-col justify-between mt-6 items-start ">
+      <div className=" md:w-[60%] w-full h-auto flex flex-col justify-start pb-5 md:pb-0 items-center  gap-6">
         <div>
           <img className="w-80 h-80 " src="./product_view_single_image.png" />
         </div>
@@ -21,8 +21,8 @@ function ProductViewHero() {
           <img src="./productViewphoto3.png" />
           <img src="./productViewphoto4.png" />
         </div>
-        <div className=" flex flex-row justify-between gap-20 items-end p-4">
-          <div className=" ">
+        <div className=" hidden   md:flex flex-row justify-between gap-20 items-end p-4">
+          <div>
             <div className="mt-6">
               <p className="flex flex-row gap-3 font-bold">
                 Review
@@ -70,8 +70,8 @@ function ProductViewHero() {
         </div>
       </div>
 
-      <div className=" w-[30%] flex flex-col justify-start items-start  ">
-        <div className="flex flex-col  pr-6 ">
+      <div className=" md:w-[30%] p-4  w-full flex flex-col justify-start items-start  ">
+        <div className="flex flex-col   md:pr-6 ">
           <div className=" flex flex-col gap-5">
             <div className="flex flex-row justify-start items-center gap-6">
               <img src=".\Nick_logo.png" /> <span>Nick</span>
@@ -119,10 +119,10 @@ function ProductViewHero() {
             </div>
           </div>
           <div className="flex flex-col pt-8  gap-4 justify-start items-center ">
-            <button className="bg-white w-full px-36 py-2 text-purple hover:bg-purple/70 hover:text-white font-medium rounded-md border-purple/30 border-solid border-[0.4px]">
+            <button className="bg-white w-full md:px-32 py-2 text-purple hover:bg-purple/70 hover:text-white md:text-md  font-medium rounded-md border-purple/30 border-solid border-[0.4px]">
               Add to cart
             </button>
-            <button className="bg-purple w-full px-36 py-2  hover:bg-purple/70 hover:text-white  text-white font-medium rounded-md hover border-purple/60 border-solid border-[1px]">
+            <button className="bg-purple w-full md:px-32 py-2  hover:bg-purple/70 hover:text-white  md:text-md text-white font-medium rounded-md hover border-purple/60 border-solid border-[1px]">
               Buy Now
             </button>
           </div>
