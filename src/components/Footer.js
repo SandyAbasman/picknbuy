@@ -14,7 +14,7 @@ function Footer() {
         </div>
       </div>
 
-      <div className="flex sm:mt-10 flex-row flex-wrap  gap-10   md:justify-evenly md:items-start">
+      <div className="flex mt-6 md:mt-0 flex-row flex-wrap  gap-10   md:justify-evenly md:items-start">
         <ul>
           <li className="font-bold">Information</li>
           <li className="text-gray font-normal">Shop Pay</li>

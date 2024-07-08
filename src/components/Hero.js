@@ -3,7 +3,7 @@ import { CiSearch } from "react-icons/ci";
 function Hero() {
   return (
     <div className="  md:flex mt-[6rem] md:mt-0 flex-col w-full h-[23rem] justify-center relative  items-center    bg-[url('/hero_bg.png')]">
-      <div className=" md:w-2/5   h-auto md:relative absolute -top-[6rem]  bg-gray/[0.3] p-3 rounded-2xl ">
+      <div className=" md:w-2/5 w-[100%] mx-1  h-auto md:relative absolute -top-[6rem]  bg-gray/[0.3] p-3 rounded-2xl ">
         <input
           type="text"
           placeholder="Sneakers"
