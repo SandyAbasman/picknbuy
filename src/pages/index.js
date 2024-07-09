@@ -9,7 +9,7 @@ export default function Home() {
       <Header />
       <div className="md:pt-20 pt-4 ">
         <Hero itemNum={18} />
-        <ProductListing itemNum={15}>
+        <ProductListing itemNum={18}>
           <div>
             <h2 className="text-purple font-bold text-3xl">Products</h2>
             <div className=" flex flex-row gap-2 md:pb-4  mt-3">
