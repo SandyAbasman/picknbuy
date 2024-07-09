@@ -3,7 +3,10 @@ import { MdOutlineStarBorder } from "react-icons/md";
 
 function Item({ item }) {
   return (
-    <a href="/productView" className=" w-40 p-2 block md:p-0   md:w-auto">
+    <a
+      href="/productView"
+      className=" max:w-40  md:max-w-auto p-2 block md:p-0   md:w-auto"
+    >
       <img
         className="mb-2   hover:opacity-50 "
         src={item.productImg}
