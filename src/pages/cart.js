@@ -25,7 +25,7 @@ function cart() {
           </div>
         </div>
       </Header>
-      <div className="md:px-10 w-full pt-40 ">
+      <div className="md:px-10 w-full pt-10 md:pt-40 ">
         <div className="md:border-[0.2px] border-black/10 rounded-md  justify-between items-center md:p-16  md:flex md:flex-row ">
           <Cart>
             <div className=" w-full">
