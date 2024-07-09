@@ -1,6 +1,6 @@
 function Footer() {
   return (
-    <div className="md:w-full md:flex md:flex-row justify-between items-center h-auto border-t-[0.2px] mt-20  border-gray/40 py-2 md:px-28 ">
+    <div className="md:w-full md:flex md:flex-row justify-between items-center h-auto border-t-[0.2px] mt-20 p-4  border-gray/40 py-2 md:px-28 ">
       <div className=" md:w-2/5 w-full h-auto  flex flex-col gap-2 mt-6">
         <img className="w-2/5" src="./logo.png" />
         <p className="text-wrap text-xl text-black/50 font-thin leading-7 py-3 ">

@@ -5,7 +5,7 @@ function Item({ item }) {
   return (
     <a
       href="/productView"
-      className=" w-36 mb-4 block md:w-auto"
+      className=" w-36 mb-4 block  md:w-auto"
     >
       <img className="mb-2  hover:opacity-50 " src={item.productImg} alt={item.productName} />
       <div className="md:pl-2">

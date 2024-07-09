@@ -7,7 +7,7 @@ import { CiSearch } from "react-icons/ci";
 
 function productView() {
   return (
-    <div className="w-full md:px-20 px-4 h-auto relative ">
+    <div className="w-full md:px-20 px-2  h-auto relative ">
       <Header>
         <div className="md:flex flex-row gap-2  justify-between md:justify-start p-3 items-center w-full h-auto ">
           <a href="./">

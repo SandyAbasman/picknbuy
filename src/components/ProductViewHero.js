@@ -71,13 +71,13 @@ function ProductViewHero() {
       </div>
 
       <div className=" md:w-[30%] md:p-4  w-full flex flex-col justify-start items-start  ">
-        <div className="flex flex-col   md:pr-6 ">
+        <div className="flex flex-col  md:pr-6 ">
           <div className=" flex flex-col gap-5">
             <div className="flex flex-row justify-start items-center gap-6">
               <img src=".\Nick_logo.png" /> <span>Nick</span>
             </div>
             <div className="flex flex-row justify-between items-center gap-36 ">
-              <p> Nike sneakers-Anorak </p>
+              <p className="text-nowrap"> Nike sneakers-Anorak </p>
               <img src=".\love icon.png" />
             </div>
             <div>
@@ -121,13 +121,13 @@ function ProductViewHero() {
           <div className="flex flex-col pt-8  gap-4 justify-start items-center ">
             <a
               href="./cart"
-              className="bg-white w-full md:px-32 py-2 text-purple hover:bg-purple/70 hover:text-white md:text-md  font-medium rounded-md border-purple/30 border-solid border-[0.4px]"
+              className="bg-white w-full md:px-32 py-3 text-purple text-center hover:bg-purple/70 hover:text-white md:text-md  font-medium rounded-md border-purple/30 border-solid border-[0.4px]"
             >
               Add to cart
             </a>
             <a
               href="./checkOut"
-              className="bg-purple w-full md:px-32 py-2  hover:bg-purple/70 hover:text-white  md:text-md text-white font-medium rounded-md hover border-purple/60 border-solid border-[1px]"
+              className="bg-purple w-full md:px-32 py-3 text-center  hover:bg-purple/70 hover:text-white  md:text-md text-white font-medium rounded-md hover border-purple/60 border-solid border-[1px]"
             >
               Buy Now
             </a>

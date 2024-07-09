@@ -8,7 +8,7 @@ import { IoMdAdd } from "react-icons/io";
 
 function checkOut() {
   return (
-    <div className="md:px-20 px-4">
+    <div className="md:px-20  px-4">
       <Header>
         <div className="md:flex flex-row gap-2  justify-between md:justify-start p-3 items-center w-full h-auto ">
           <a href="./">
@@ -26,7 +26,7 @@ function checkOut() {
       </Header>
       <div className="mt-28 md:px-10 md:flex md:flex-row-reverse md:justify-between border-black/20 border-t pt-10 md:items-start">
         <Cart>
-          <div className=" md:ml-40 w-full p-6 md:w-[50%]  ">
+          <div className=" md:ml-40 w-full md:p-6 md:w-[50%]  ">
             <div className=" flex flex-row   pb-3 gap-2   items-center">
               <span className="text-2xl font-medium text-nowrap">
                 Order summary
@@ -38,8 +38,8 @@ function checkOut() {
                 src="./product_view_single_image.png"
               />
 
-              <div className="  ">
-                <div className=" flex flex-row justify-between items-center text-xl  font-medium md:gap-20 ">
+              <div className=" w-full ">
+                <div className=" flex md:flex-row  w-full justify-between md:justify-start items-center text-lg font-medium  md:gap-20">
                   <p className="text-nowrap mr-3">Nike sneakers</p>
                   <span className="text-purple/90 font-bold"> $100</span>
                 </div>

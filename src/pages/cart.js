@@ -9,9 +9,9 @@ import { IoMdAdd } from "react-icons/io";
 
 function cart() {
   return (
-    <div className="md:px-20 px-4 relative w-screen ">
+    <div className="md:px-10 px-2  relative w-full ">
       <Header>
-        <div className="md:flex flex-row gap-2  justify-between md:justify-start p-3 items-center w-full h-auto ">
+        <div className="md:flex flex-row gap-2  justify-between md:justify-start md:p-3 items-center w-full h-auto ">
           <a href="./">
             <img className="w-[10rem] mr-60 cursor-pointer" src="./logo.png " />
           </a>
@@ -26,27 +26,27 @@ function cart() {
         </div>
       </Header>
       <div className="md:px-10 w-full pt-40 ">
-        <div className="border-[0.2px] border-black/10 rounded-md  justify-between items-center px-8  md:flex md:flex-row ">
+        <div className="md:border-[0.2px] border-black/10 rounded-md  justify-between items-center md:p-16  md:flex md:flex-row ">
           <Cart>
-            <div className="p-6">
+            <div className=" w-full">
               <div className=" flex flex-row  pb-3 gap-2  items-center">
                 <img src=".\Nick_logo.png" />
                 <span>Nick</span>
               </div>
-              <div className="flex flex-row  justify-start gap-7 items-center  ">
+              <div className="flex flex-row   md:justify-start  md:gap-4 items-center  ">
                 <img
-                  className="w-36 h-36"
+                  className="w-36 pr-4 h-36"
                   src="./product_view_single_image.png"
                 />
-                <div className="  ">
-                  <div className=" flex flex-row justify-between items-center text-lg font-medium  gap-20">
-                    <h4>Nike sneakers</h4>
+                <div className=" w-full ">
+                  <div className=" flex md:flex-row  w-full justify-between md:justify-start items-center text-lg font-medium  md:gap-20">
+                    <h4 className="text-nowrap">Nike sneakers</h4>
                     <span className="text-purple/90 font-bold"> $100</span>
                   </div>
                   <p className="text-black/70 font-light text-sm pt-2">
                     Randy orange / 42
                   </p>
-                  <div className="bg-gray/10 flex flex-row  rounded-md px-3 w-1/2  mb-2 mt-10 py-[0.3rem]">
+                  <div className="bg-gray/10 flex flex-row  rounded-md px-3 w-fit  mb-2 mt-10 py-[0.3rem]">
                     <p className="flex flex-row px-2 gap-4 justify-between items-center font-medium text-lg">
                       <span className="font-thin text-black/50 cursor-pointer ">
                         <RiDeleteBin6Line />
@@ -65,8 +65,8 @@ function cart() {
         </div>
 
         <ProductListing itemNum={5}>
-          <div className="px-20 md:px-0 ">
-            <h2 className="text-purple font-bold  text-xl md:text-3xl">
+          <div className="px-10 md:px-10 ">
+            <h2 className="text-purple font-bold text-nowrap text-xl md:text-3xl">
               Recently Viewed
             </h2>
           </div>

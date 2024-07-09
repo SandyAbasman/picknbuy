@@ -2,30 +2,32 @@ import { AiOutlineCreditCard } from "react-icons/ai";
 
 function Payment() {
   return (
-    <div className=" md:w-[50%]  border-r-[0.1px] mb-20  border-black/20  ">
-      <div className=" w-fit p-8">
+    <div className=" md:w-[50%]  md:mt-0 mt-10 md:border-r-[0.1px] mb-20  border-black/20  ">
+      <div className=" w-fit  md:p-8">
         <div className=" flex-col flex gap-3  ">
-          <h3 className="font-medium text-black/70  text-2xl">Payment details</h3>
+          <h3 className="font-medium text-black/70  text-2xl">
+            Payment details
+          </h3>
           <div className="flex flex-row gap-3 pt-4 ">
-            <span className="pr-2 font-medium text-sm text-black/60">
+            <span className="pr-2  font-medium text-sm text-black/60">
               Credit card/Debit card
             </span>
             <img src="./logos_mastercard.png" />
             <img src="./verve.png" />
           </div>
 
-          <div className="md:flex md:flex-col gap-3   ">
-            <div className="md:flex md:flex-row gap-6 ">
-              <div className="flex flex-col">
-                <label>First name</label>
+          <div className="md:flex md:flex-col   ">
+            <div className="md:flex md:flex-row items-center gap-6 ">
+              <div className="flex flex-col py-2 ">
+                <label className="py-2">First name</label>
                 <input
-                  className="border-[0.1px] p-2  text-black/80 border-black/20 rounded-md"
+                  className="border-[0.1px] p-2  py-2 text-black/80 border-black/20 rounded-md"
                   type="text"
                   placeholder="e.g John"
                 />
               </div>
               <div className="flex flex-col">
-                <label>Last name</label>
+                <label className="py-2">Last name</label>
                 <input
                   className="border-[0.1px] p-2  text-black/80   border-black/20 rounded-md"
                   type="text"
@@ -34,7 +36,7 @@ function Payment() {
               </div>
             </div>
             <div className="flex flex-col">
-              <label>Delivery address</label>
+              <label className="py-2">Delivery address</label>
               <input
                 className="border-[0.1px] p-2  text-black/80 border-black/20 rounded-md"
                 type="text"
@@ -43,16 +45,16 @@ function Payment() {
             </div>
             <div className="md:flex md:flex-row gap-4 justify-between ">
               <div className="flex flex-col md:w-2/3 ">
-                <label>Country</label>
-                <select className=" border-[0.1px] p-2   border-black/20 rounded-md">
+                <label className="py-2">Country</label>
+                <select className=" border-[0.1px] p-3   border-black/20 rounded-md">
                   <option className=" text-black/50">Nigeria</option>
                   <option>Ghana</option>
                   <option>USA</option>
                 </select>
               </div>
-              <div className="flex flex-col md:w-2/3">
-                <label>State</label>
-                <select className="border-[0.1px] p-2   text-black/80 border-black/20 rounded-md">
+              <div className="flex flex-col  md:w-2/3">
+                <label className="py-2">State</label>
+                <select className="border-[0.1px] p-3   text-black/80 border-black/20 rounded-md">
                   <option className=" text-black/50">Select</option>
                   <option>Uyo</option>
                   <option>Lagos</option>
@@ -62,7 +64,7 @@ function Payment() {
           </div>
           <div className=" ">
             <div className="flex flex-col ">
-              <label className="pb-2">Card details</label>
+              <label className="py-2 ">Card details</label>
               <input
                 className=" border-[0.1px] p-2   text-black/80 border-black/20 rounded-md"
                 type="text"
