@@ -8,7 +8,7 @@ import { IoMdAdd } from "react-icons/io";
 
 function checkOut() {
   return (
-    <div className="md:px-20  px-4">
+    <div className="md:px px-4">
       <Header>
         <div className="md:flex flex-row gap-2  justify-between md:justify-start p-3 items-center w-full h-auto ">
           <a href="./">
@@ -24,7 +24,7 @@ function checkOut() {
           </div>
         </div>
       </Header>
-      <div className="mt-28 md:px-10 md:flex md:flex-row-reverse md:justify-between border-black/20 border-t pt-10 md:items-start">
+      <div className="mt-28 md:px-6 md:pr-10 md:flex md:flex-row-reverse md:justify-between border-black/20 border-t pt-10 md:items-start">
         <Cart>
           <div className=" md:ml-40 w-full md:p-6 md:w-[50%]  ">
             <div className=" flex flex-row   pb-3 gap-2   items-center">
