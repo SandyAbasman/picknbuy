@@ -1,7 +1,7 @@
 function LeftCart() {
   return (
     <div className=" md:w-[50%] w-full px-4 py-4 md:py-0  md:p-20 md:border-l  md:border-black/10">
-      <div className=" flex flex-row justify-between    items-center  text-lg   gap-20">
+      <div className=" flex flex-row justify-between  md:px-[1rem]  items-center  text-lg   gap-20">
         <h4>Subtotal</h4>
         <span className="font-bold"> $100</span>
       </div>
