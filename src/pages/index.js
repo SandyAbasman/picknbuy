@@ -13,13 +13,13 @@ export default function Home() {
           <div>
             <h2 className="text-purple font-bold text-3xl">Products</h2>
             <div className=" flex flex-row gap-2 md:pb-4  mt-3">
-              <select className=" rounded-md cursor-pointer text-black/60 border-2 p-2 border-gray/50 text-sm">
+              <select className=" rounded-md cursor-pointer text-black/60 border-2 p-3 border-gray/50 text-sm">
                 <option>Sort By</option>
               </select>
-              <select className=" rounded-md cursor-pointer text-black/60 border-2  p-2 border-gray/50 text-sm">
+              <select className=" rounded-md cursor-pointer text-black/60 border-2  p-3 border-gray/50 text-sm">
                 <option>Price</option>
               </select>
-              <select className=" rounded-md cursor-pointer text-black/60 border-2  p-2 border-gray/50 text-sm">
+              <select className=" rounded-md cursor-pointer text-black/60 border-2  p-3 border-gray/50 text-sm">
                 <option>Gender</option>
               </select>
             </div>
