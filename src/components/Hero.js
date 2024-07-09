@@ -6,10 +6,10 @@ import Marquee from "react-fast-marquee";
 function Hero({ itemNum }) {
   return (
     <div className=" mt-[6rem] md:mt-0  w-full  md:justify-center flex flex-col  relative md:items-center   ">
-      <div className=" flex flex-col justify-center items-center">
+      <div className=" flex flex-col justify-center mb-2 items-center">
         <img src=".\logo.png" />
 
-        <div className="  mx-1 relative md:hidden   mt-4 bg-gray/[0.3] p-3 rounded-2xl ">
+        <div className="  mx-1 relative md:hidden  w-full  mt-4 bg-gray/[0.3] p-3 rounded-2xl ">
           <input
             type="text"
             placeholder="Sneakers"
