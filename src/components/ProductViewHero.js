@@ -21,7 +21,7 @@ function ProductViewHero() {
           <img src="./productViewphoto3.png" />
           <img src="./productViewphoto4.png" />
         </div>
-        <div className=" hidden   md:flex flex-row justify-between gap-20 items-end p-4">
+        <div className=" hidden   md:flex flex-row justify-between gap-20 items-end md:p-4">
           <div>
             <div className="mt-6">
               <p className="flex flex-row gap-3 font-bold">
@@ -70,7 +70,7 @@ function ProductViewHero() {
         </div>
       </div>
 
-      <div className=" md:w-[30%] p-4  w-full flex flex-col justify-start items-start  ">
+      <div className=" md:w-[30%] md:p-4  w-full flex flex-col justify-start items-start  ">
         <div className="flex flex-col   md:pr-6 ">
           <div className=" flex flex-col gap-5">
             <div className="flex flex-row justify-start items-center gap-6">
@@ -105,7 +105,7 @@ function ProductViewHero() {
             </div>
             <div className="flex flex-row justify-between items-center">
               <p>Quantity</p>
-              <div className="bg-gray/10 flex flex-row  rounded-md px-3 py-[0.3rem]">
+              <div className="bg-gray/10 flex flex-row  rounded-md md:px-3 py-[0.3rem]">
                 <p className="flex flex-row px-2 gap-4 justify-between items-center font-medium text-lg">
                   <span className="font-thin text-black/30 cursor-pointer ">
                     <GrSubtract />
@@ -119,16 +119,22 @@ function ProductViewHero() {
             </div>
           </div>
           <div className="flex flex-col pt-8  gap-4 justify-start items-center ">
-            <button className="bg-white w-full md:px-32 py-2 text-purple hover:bg-purple/70 hover:text-white md:text-md  font-medium rounded-md border-purple/30 border-solid border-[0.4px]">
+            <a
+              href="./cart"
+              className="bg-white w-full md:px-32 py-2 text-purple hover:bg-purple/70 hover:text-white md:text-md  font-medium rounded-md border-purple/30 border-solid border-[0.4px]"
+            >
               Add to cart
-            </button>
-            <button className="bg-purple w-full md:px-32 py-2  hover:bg-purple/70 hover:text-white  md:text-md text-white font-medium rounded-md hover border-purple/60 border-solid border-[1px]">
+            </a>
+            <a
+              href="./checkOut"
+              className="bg-purple w-full md:px-32 py-2  hover:bg-purple/70 hover:text-white  md:text-md text-white font-medium rounded-md hover border-purple/60 border-solid border-[1px]"
+            >
               Buy Now
-            </button>
+            </a>
           </div>
         </div>
         <div>
-          <div className=" flex flex-row justify-between gap-10 items-end p-4">
+          <div className=" flex flex-row justify-between gap-10 items-end ">
             <div className=" ">
               <div className="mt-6">
                 <p className="flex flex-col gap-2 text-black/90 text-2xl">

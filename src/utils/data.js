@@ -119,6 +119,38 @@ const data = [
     rating: 10,
     price: 2000,
   },
+  {
+    productName: " Rolex watch",
+    productImg: "./Rectangle 45.png",
+    gender: "male",
+    star: 4,
+    rating: 10,
+    price: 538,
+  },
+  {
+    productName: " Rolex watch",
+    productImg: "./Rectangle 44.png",
+    gender: "female",
+    star: 4,
+    rating: 10,
+    price: 800,
+  },
+  {
+    productName: " Rolex watch",
+    productImg: "./Rectangle 43.png",
+    gender: "male",
+    star: 5,
+    rating: 10,
+    price: 100.99,
+  },
+  {
+    productName: " Rolex watch",
+    productImg: "./Rectangle 47.png",
+    gender: "male",
+    star: 4,
+    rating: 10,
+    price: 40.77,
+  },
 ];
 
 export default data;
