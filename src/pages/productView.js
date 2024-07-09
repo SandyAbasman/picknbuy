@@ -7,7 +7,7 @@ import { CiSearch } from "react-icons/ci";
 
 function productView() {
   return (
-    <div className="w-full md:px-20 px-2  h-auto relative ">
+    <div className="w-full md:px-20   h-auto relative ">
       <Header>
         <div className="md:flex flex-row gap-2  justify-between md:justify-start p-3 items-center w-full h-auto ">
           <a href="./">
@@ -23,7 +23,7 @@ function productView() {
           </div>
         </div>
       </Header>
-      <div className="pt-40 ">
+      <div className="pt-4  ">
         <ProductViewHero />
         <ProductListing itemNum={10}>
           <div className=" md:px-0  ">

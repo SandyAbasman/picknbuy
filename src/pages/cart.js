@@ -9,7 +9,7 @@ import { IoMdAdd } from "react-icons/io";
 
 function cart() {
   return (
-    <div className="md:px-10 px-2  relative w-full ">
+    <div className="md:px-10 px-1  relative w-full ">
       <Header>
         <div className="md:flex flex-row gap-2  justify-between md:justify-start md:p-3 items-center w-full h-auto ">
           <a href="./">
@@ -25,7 +25,7 @@ function cart() {
           </div>
         </div>
       </Header>
-      <div className="md:px-10 w-full pt-10 md:pt-40 ">
+      <div className="md:px-10 w-full pt-28 md:pt-40 ">
         <div className="md:border-[0.2px] border-black/10 rounded-md  justify-between items-center md:p-16  md:flex md:flex-row ">
           <Cart>
             <div className=" w-full">

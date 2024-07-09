@@ -8,7 +8,7 @@ const data = [
     price: 594.33,
   },
   {
-    productName: "Winter Jean Jacket",
+    productName: "Winter shirt",
     productImg: "./Rectangle 41.png",
     gender: "female",
     star: 4,

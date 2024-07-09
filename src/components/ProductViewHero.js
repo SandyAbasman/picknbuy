@@ -10,8 +10,8 @@ import { AiOutlineLink } from "react-icons/ai";
 
 function ProductViewHero() {
   return (
-    <div className="  h-auto flex md:flex-row flex-col justify-between mt-6 items-start ">
-      <div className=" md:w-[60%] w-full h-auto flex flex-col justify-start pb-5 md:pb-0 items-center  gap-6">
+    <div className="  h-auto flex md:flex-row flex-col justify-between mt-24 items-start ">
+      <div className=" md:w-[60%] w-full h-auto flex flex-col justify-start pb-5  md:pb-0 items-center  gap-6">
         <div>
           <img className="w-80 h-80 " src="./product_view_single_image.png" />
         </div>
@@ -70,9 +70,9 @@ function ProductViewHero() {
         </div>
       </div>
 
-      <div className=" md:w-[30%] md:p-4  w-full flex flex-col justify-start items-start  ">
+      <div className=" md:w-[30%] md:p-4 md:px-0 px-3 w-full flex flex-col  p-1 justify-start items-start  ">
         <div className="flex flex-col  md:pr-6 ">
-          <div className=" flex flex-col gap-5">
+          <div className=" flex flex-col  gap-5">
             <div className="flex flex-row justify-start items-center gap-6">
               <img src=".\Nick_logo.png" /> <span>Nick</span>
             </div>
@@ -134,7 +134,7 @@ function ProductViewHero() {
           </div>
         </div>
         <div>
-          <div className=" flex flex-row justify-between gap-10 items-end ">
+          <div className=" flex flex-row justify-between  gap-10 items-end ">
             <div className=" ">
               <div className="mt-6">
                 <p className="flex flex-col gap-2 text-black/90 text-2xl">
