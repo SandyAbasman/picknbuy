@@ -38,6 +38,7 @@ function Hero({ itemNum }) {
                 className="mb-2 p-2 w-40 h-40 hover:opacity-50 "
                 src={item.productImg}
                 alt={item.productName}
+                key={index}
               />
             ))}
           </div>
@@ -49,6 +50,7 @@ function Hero({ itemNum }) {
                 className="mb-2 p-2 w-40 h-40 hover:opacity-50 "
                 src={item.productImg}
                 alt={item.productName}
+                key={index}
               />
             ))}
           </div>
@@ -61,6 +63,7 @@ function Hero({ itemNum }) {
                   className="mb-2 p-2 w-40 h-40 hover:opacity-50 "
                   src={item.productImg}
                   alt={item.productName}
+                  key={index}
                 />
               ) : null
             )}
