@@ -1,7 +1,5 @@
 import axios from "axios";
 
-
-
 const params = {
   organization_id: process.env.ORGAN_ID,
   // reverse_sort: false,
@@ -10,7 +8,6 @@ const params = {
   Appid: process.env.APP_ID,
   Apikey: process.env.API_KEY,
 };
-
 axios.defaults.headers.common.Authorization = `Bearer ${process.env.API_KEY}`;
 
 async function getProducts(req, res) {
