@@ -12,7 +12,11 @@ function checkOut() {
       <Header>
         <div className="md:flex flex-row gap-2  justify-between md:justify-start p-3 items-center w-full h-auto ">
           <a href="./">
-            <img className="w-[10rem] mr-60 cursor-pointer" src="./logo.png " />
+            <img
+              className="w-[10rem] mr-60 cursor-pointer"
+              src="./logo.png "
+              alt=" "
+            />
           </a>
           <div className=" w-[50%]  h-auto relative hidden  lg:block p-3 rounded-2xl ">
             <input
@@ -36,6 +40,7 @@ function checkOut() {
               <img
                 className="w-36 h-36"
                 src="./product_view_single_image.png"
+                alt=" "
               />
 
               <div className=" w-full ">
