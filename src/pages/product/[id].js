@@ -61,4 +61,4 @@ function ProductView() {
   );
 }
 
-export default productView;
+export default ProductView;
