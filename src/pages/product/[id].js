@@ -8,12 +8,12 @@ import { useRouter } from "next/router";
 import { productItem } from "@/utils/api";
 
 function ProductView() {
-  const router =  useRouter();
+  const router = useRouter();
   const [product, setProduct] = useState([]);
 
   useEffect(() => {
     router.query.id !== undefined ? getAvailableProduct() : "";
-  // eslint-disable-next-line react-hooks/exhaustive-deps
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [router]);
 
   const getAvailableProduct = async () => {
