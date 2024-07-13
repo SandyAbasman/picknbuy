@@ -7,7 +7,7 @@ import { CiSearch } from "react-icons/ci";
 import { useRouter } from "next/router";
 import { productItem } from "@/utils/api";
 
-function productView() {
+function ProductView() {
   const router = useRouter();
   const [product, setProduct] = useState([]);
   let allProducts;
@@ -34,7 +34,10 @@ function productView() {
       <Header>
         <div className="md:flex flex-row gap-2  justify-between md:justify-start p-3 items-center w-full h-auto ">
           <a href="../">
-            <img className="w-[10rem] mr-60 cursor-pointer" src="./logo.png " />
+            <img
+              className="w-[10rem] mr-60 cursor-pointer"
+              src="./logo.png  "
+            />
           </a>
           <div className=" w-[50%]  h-auto relative hidden  lg:block p-3 rounded-2xl ">
             <input
@@ -66,4 +69,4 @@ function productView() {
   );
 }
 
-export default productView;
+export default ProductView;
