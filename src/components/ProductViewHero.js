@@ -23,7 +23,7 @@ function ProductViewHero({ product }) {
             }
           />
         </div>
-        <div className="flex hidden flex-row gap-2">
+        <div className="flex flex-row gap-2">
           <img src="./productViewphoto1.png" />
           <img src="./productViewphoto2.png" />
           <img src="./productViewphoto3.png" />

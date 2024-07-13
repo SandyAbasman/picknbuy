@@ -7,18 +7,22 @@ import { CiSearch } from "react-icons/ci";
 import { useRouter } from "next/router";
 import { productItem } from "@/utils/api";
 
-function ProductView() {
+function productView() {
   const router = useRouter();
   const [product, setProduct] = useState([]);
-
+  let allProducts;
   useEffect(() => {
-    router.query.id !== undefined ? getAvailableProduct() : "";
+    router.query.productId !== undefined ? getAvailableProduct() : null;
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [router]);
 
+  try {
+    allProducts = JSON.parse(localStorage.getItem("products")) || "";
+  } catch (error) {}
+
   const getAvailableProduct = async () => {
     try {
-      const response = await productItem(router.query.id);
+      const response = await productItem(router.query.productId);
       setProduct(response);
     } catch (error) {
       console.log(error);
@@ -26,15 +30,11 @@ function ProductView() {
   };
 
   return (
-    <div className="w-full md:px-20   h-auto relative ">
+    <div className="w-full md:px-20  h-auto relative ">
       <Header>
         <div className="md:flex flex-row gap-2  justify-between md:justify-start p-3 items-center w-full h-auto ">
-          <a href="./">
-            <img
-              className="w-[10rem] mr-60 cursor-pointer"
-              src="./logo.png "
-              alt="logo"
-            />
+          <a href="../">
+            <img className="w-[10rem] mr-60 cursor-pointer" src="./logo.png " />
           </a>
           <div className=" w-[50%]  h-auto relative hidden  lg:block p-3 rounded-2xl ">
             <input
@@ -48,17 +48,22 @@ function ProductView() {
       </Header>
       <div className="pt-4  ">
         <ProductViewHero product={product} />
-        <ProductListing itemNum={10}>
-          <div className=" md:px-0  ">
-            <h2 className="text-purple font-bold  text-xl md:text-3xl">
-              You May Also Like
-            </h2>
-          </div>
-        </ProductListing>
+        {allProducts?.length > 0 && (
+          <ProductListing
+            itemNum={10}
+            allProducts={allProducts?.length > 0 ? allProducts : ""}
+          >
+            <div className=" md:px-0  ">
+              <h2 className="text-purple font-bold  text-xl md:text-3xl">
+                You May Also Like
+              </h2>
+            </div>
+          </ProductListing>
+        )}
         <Footer />
       </div>
     </div>
   );
 }
 
-export default ProductView;
+export default productView;

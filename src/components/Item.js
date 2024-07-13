@@ -31,7 +31,7 @@ function Item({ item }) {
               <MdOutlineStarBorder key={i} />
             ))}
           </span> */}
-          <p>({item?.rating})</p>
+          <p>({item?.description})</p>
         </div>
         <p className="text-purple font-bold">
           ${item?.current_price[0]?.AED[0]}
