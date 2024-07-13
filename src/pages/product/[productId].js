@@ -10,14 +10,14 @@ import { productItem } from "@/utils/api";
 function ProductView() {
   const router = useRouter();
   const [product, setProduct] = useState([]);
-  let allProducts;
+  let products;
   useEffect(() => {
     router.query.productId !== undefined ? getAvailableProduct() : null;
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [router]);
 
   try {
-    allProducts = JSON.parse(localStorage.getItem("products")) || "";
+    products = JSON.parse(localStorage.getItem("products")) || "";
   } catch (error) {}
 
   const getAvailableProduct = async () => {
@@ -29,6 +29,8 @@ function ProductView() {
     }
   };
 
+ 
+
   return (
     <div className="w-full md:px-20  h-auto relative ">
       <Header>
@@ -36,7 +38,8 @@ function ProductView() {
           <a href="../">
             <img
               className="w-[10rem] mr-60 cursor-pointer"
-              src="./logo.png  "
+              src="../logo.png  "
+              alt=" "
             />
           </a>
           <div className=" w-[50%]  h-auto relative hidden  lg:block p-3 rounded-2xl ">
@@ -51,18 +54,15 @@ function ProductView() {
       </Header>
       <div className="pt-4  ">
         <ProductViewHero product={product} />
-        {allProducts?.length > 0 && (
-          <ProductListing
-            itemNum={10}
-            allProducts={allProducts?.length > 0 ? allProducts : ""}
-          >
-            <div className=" md:px-0  ">
-              <h2 className="text-purple font-bold  text-xl md:text-3xl">
-                You May Also Like
-              </h2>
-            </div>
-          </ProductListing>
-        )}
+        <div className=" md:px-0  ">
+          <h2 className="text-purple font-bold  text-xl md:text-3xl">
+            You May Also Like
+          </h2>
+        </div>
+        <ProductListing
+          itemNum={10}
+          allProducts={products?.length > 0 ? products : []}
+        />
         <Footer />
       </div>
     </div>

@@ -10,6 +10,7 @@ import { AiOutlineLink } from "react-icons/ai";
 
 function ProductViewHero({ product }) {
   const baseUrl = "https://api.timbu.cloud/images/";
+
   return (
     <div className="  h-auto flex md:flex-row flex-col justify-between mt-24 items-start ">
       <div className=" md:w-[60%] w-full h-auto flex flex-col justify-start pb-5  md:pb-0 items-center  gap-6">
@@ -23,7 +24,7 @@ function ProductViewHero({ product }) {
             }
           />
         </div>
-        <div className="flex flex-row gap-2">
+        <div className="flex hidden flex-row gap-2">
           <img src="./productViewphoto1.png" />
           <img src="./productViewphoto2.png" />
           <img src="./productViewphoto3.png" />
@@ -82,14 +83,14 @@ function ProductViewHero({ product }) {
         <div className="flex flex-col  md:pr-6 ">
           <div className=" flex flex-col  gap-5">
             <div className="flex flex-row justify-start items-center gap-6">
-              <img src=".\Nick_logo.png" /> <span>Nick</span>
+              <img src="..\Nick_logo.png" /> <span>Nick</span>
             </div>
             <div className="flex flex-row justify-between items-center gap-36 ">
-              <p className="text-nowrap"> Nike sneakers-Anorak </p>
-              <img src=".\love icon.png" />
+              <p className="text-nowrap"> {product.name} </p>
+              <img src="..\love icon.png" />
             </div>
             <div>
-              <span>$100.00</span>
+              <span>$100</span>
             </div>
             <div className="flex flex-row justify-between items-center">
               <p>Color</p>
@@ -118,7 +119,7 @@ function ProductViewHero({ product }) {
                   <span className="font-thin text-black/30 cursor-pointer ">
                     <GrSubtract />
                   </span>
-                  <span>1</span>
+                  <span> </span>
                   <span className="cursor-pointer">
                     <IoMdAdd />
                   </span>
