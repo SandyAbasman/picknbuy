@@ -8,14 +8,22 @@ import { GrSubtract } from "react-icons/gr";
 import { IoMdAdd } from "react-icons/io";
 import { AiOutlineLink } from "react-icons/ai";
 
-function ProductViewHero() {
+function ProductViewHero({ product }) {
+  const baseUrl = "https://api.timbu.cloud/images/";
   return (
     <div className="  h-auto flex md:flex-row flex-col justify-between mt-24 items-start ">
       <div className=" md:w-[60%] w-full h-auto flex flex-col justify-start pb-5  md:pb-0 items-center  gap-6">
         <div>
-          <img className="w-80 h-80 " src="./product_view_single_image.png" />
+          <img
+            className="w-80 h-80 "
+            src={
+              product.photos?.length > 0
+                ? baseUrl + product.photos[0].url
+                : "https://via.placeholder.com/150"
+            }
+          />
         </div>
-        <div className="flex flex-row gap-2">
+        <div className="flex hidden flex-row gap-2">
           <img src="./productViewphoto1.png" />
           <img src="./productViewphoto2.png" />
           <img src="./productViewphoto3.png" />

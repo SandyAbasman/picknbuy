@@ -1,26 +1,24 @@
-import { Children, useState } from "react";
-
+import { useState, useEffect } from "react";
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import ProductListing from "@/components/ProductListing";
 import ProductViewHero from "@/components/ProductViewHero";
 import { CiSearch } from "react-icons/ci";
 import { useRouter } from "next/router";
-import { product } from "@/utils/api";
+import { productItem } from "@/utils/api";
 
 function productView() {
   const router = useRouter();
   const [product, setProduct] = useState([]);
 
   useEffect(() => {
-    getAvailableProuct();
-  }, []);
+    router.query.id !== undefined ? getAvailableProduct() : "";
+  }, [router]);
 
-  const getAvailableProuct = async () => {
+  const getAvailableProduct = async () => {
     try {
-      const response = await product(router.query.slug);
-      console.log(response);
-      setProduct(response.items);
+      const response = await productItem(router.query.id);
+      setProduct(response);
     } catch (error) {
       console.log(error);
     }
@@ -44,7 +42,7 @@ function productView() {
         </div>
       </Header>
       <div className="pt-4  ">
-        <ProductViewHero />
+        <ProductViewHero product={product} />
         <ProductListing itemNum={10}>
           <div className=" md:px-0  ">
             <h2 className="text-purple font-bold  text-xl md:text-3xl">
